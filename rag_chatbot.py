@@ -62,9 +62,9 @@ Answer:""",
 
         print("RAG system initialised.")
         print("  Text splitter  → chunk_size=1000, overlap=200")
-        print("  Embeddings     → models/text-embedding-004 (Gemini)")
+        print("  Embeddings     → gemini-embedding-001 (Gemini)")
         print("  Vector store   → InMemoryVectorStore (built-in LangChain)")
-        print("  Language model → gemini-1.5-flash (temperature=0)")
+        print("  Language model → gemini-2.5-flash (temperature=0)")
         print()
 
     def load_document(self, text: str) -> None:
