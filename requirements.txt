@@ -1,0 +1,35 @@
+# ============================================================
+# PROJECT 2: Smart Document Q&A Bot (RAG System)
+# Dependencies — works with Python 3.14
+# ============================================================
+# Install: pip install -r requirements.txt
+
+# Core LangChain framework
+langchain>=0.3.0
+
+# Google Gemini LLM + Embeddings integration
+langchain-google-genai>=2.0.0
+
+# Text splitting utilities
+langchain-text-splitters>=0.3.0
+
+# Google GenAI SDK (the underlying API client — renamed from google-generativeai in v1.x)
+# langchain-google-genai 2.x+ requires THIS package, not the old google-generativeai.
+# The old package (google-generativeai) is retired; google-genai is its successor.
+google-genai>=1.0.0
+
+# Load API keys from .env file
+python-dotenv>=1.0.0
+
+# PDF reading support (for future extension)
+pypdf>=4.0.0
+
+# ── NOTE ON VECTOR STORE ──────────────────────────────────
+# We use LangChain's built-in InMemoryVectorStore instead of
+# ChromaDB. It teaches the same RAG concepts without any
+# external database dependency.
+#
+# To swap in ChromaDB later (once it supports Python 3.14):
+#   pip install langchain-chroma chromadb
+# Then replace InMemoryVectorStore in rag_chatbot.py with Chroma.
+# ─────────────────────────────────────────────────────────
