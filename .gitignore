@@ -1,0 +1,17 @@
+# Environment variables (contains API keys - NEVER commit this)
+.env
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE / OS files
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Chroma vector store data (can be regenerated)
+chroma_db/
