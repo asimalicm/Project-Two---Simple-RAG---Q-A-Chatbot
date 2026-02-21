@@ -15,3 +15,6 @@ build/
 
 # Chroma vector store data (can be regenerated)
 chroma_db/
+
+# Learning/scratch scripts (not part of the published project)
+rag_chatbot_learn.py
